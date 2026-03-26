@@ -1,0 +1,15 @@
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    padding: 10px;
+    background-color: orange;
+}
+
+/* UNUSED AGAIN */
+.fake-class {
+    display: none;
+}

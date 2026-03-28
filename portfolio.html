@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - TechVista</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo"><span class="logo-icon">◈</span><span class="logo-text">TechVista</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-cta">Get Started</button>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=1920&q=100" alt="Portfolio" class="page-hero-img">
+        </div>
+        <div class="page-hero-content">
+            <h1>Our Portfolio</h1>
+            <p>250+ successful projects across 40+ countries</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=100" alt="ShopMax Platform">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tags"><span>React</span><span>Node.js</span><span>AWS</span></div>
+                        <h3>ShopMax E-Commerce Platform</h3>
+                        <p>A full-featured e-commerce solution handling 50,000+ daily transactions for a leading retail chain.</p>
+                        <div class="portfolio-meta">
+                            <span>📅 2023</span>
+                            <span>🌍 USA</span>
+                            <a href="#" class="portfolio-link">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="mobile">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&q=100" alt="FinanceGo App">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tags"><span>Flutter</span><span>Firebase</span></div>
+                        <h3>FinanceGo Mobile Banking</h3>
+                        <p>Award-winning banking app with 2M+ active users across 15 countries.</p>
+                        <div class="portfolio-meta">
+                            <span>📅 2023</span>
+                            <span>🌍 Global</span>
+                            <a href="#" class="portfolio-link">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="design">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=100" alt="DataSight Dashboard">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tags"><span>Vue.js</span><span>D3.js</span></div>
+                        <h3>DataSight Analytics Dashboard</h3>
+                        <p>Real-time analytics platform processing millions of data points for enterprise clients.</p>
+                        <div class="portfolio-meta">
+                            <span>📅 2022</span>
+                            <span>🌍 Europe</span>
+                            <a href="#" class="portfolio-link">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&q=100" alt="EduLearn LMS">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tags"><span>Next.js</span><span>Python</span></div>
+                        <h3>EduLearn LMS Platform</h3>
+                        <p>Learning management system serving 500,000+ students across 30 universities.</p>
+                        <div class="portfolio-meta">
+                            <span>📅 2023</span>
+                            <span>🌍 Asia</span>
+                            <a href="#" class="portfolio-link">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="ecommerce">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=100" alt="LuxuryCo">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tags"><span>Shopify</span><span>React</span></div>
+                        <h3>LuxuryCo Fashion Store</h3>
+                        <p>Premium e-commerce experience for luxury fashion brand with AR try-on feature.</p>
+                        <div class="portfolio-meta">
+                            <span>📅 2023</span>
+                            <span>🌍 France</span>
+                            <a href="#" class="portfolio-link">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="mobile">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=100" alt="HealthPulse">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tags"><span>React Native</span><span>ML</span></div>
+                        <h3>HealthPulse Fitness App</h3>
+                        <p>AI-powered fitness app with personalized workout plans and nutrition tracking.</p>
+                        <div class="portfolio-meta">
+                            <span>📅 2022</span>
+                            <span>🌍 Australia</span>
+                            <a href="#" class="portfolio-link">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <div class="container">
+            <h2>The Numbers That Matter</h2>
+            <div class="results-grid">
+                <div class="result-item">
+                    <span class="result-num" data-target="250">0</span><span>+</span>
+                    <p>Projects Delivered</p>
+                </div>
+                <div class="result-item">
+                    <span class="result-num" data-target="40">0</span><span>+</span>
+                    <p>Countries Served</p>
+                </div>
+                <div class="result-item">
+                    <span class="result-num" data-target="98">0</span><span>%</span>
+                    <p>Client Retention</p>
+                </div>
+                <div class="result-item">
+                    <span class="result-num" data-target="150">0</span><span>+</span>
+                    <p>Team Members</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Have a Project in Mind?</h2>
+            <p>Let's turn your vision into a digital reality that exceeds expectations.</p>
+            <a href="contact.html" class="btn-primary btn-large">Start a Project</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><span class="logo-icon">◈</span> TechVista<p>Transforming ideas into digital reality since 2009.</p></div>
+                <div class="footer-links"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-links"><h4>Services</h4><ul><li><a href="#">Web Development</a></li><li><a href="#">Mobile Apps</a></li><li><a href="#">UI/UX Design</a></li><li><a href="#">Cloud Solutions</a></li></ul></div>
+                <div class="footer-contact"><h4>Contact</h4><p>📧 hello@techvista.com</p><p>📞 +1 (555) 123-4567</p><p>📍 San Francisco, CA</p></div>
+            </div>
+            <div class="footer-bottom"><p>© 2024 TechVista. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

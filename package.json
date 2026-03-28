@@ -1,0 +1,41 @@
+{
+  "name": "techvista-website",
+  "version": "1.0.0",
+  "description": "TechVista - Web Performance Optimization Project (CA-3)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "css": "gulp css",
+    "js": "gulp js",
+    "images": "gulp images",
+    "serve": "browser-sync start --server --files '*.html, css/*.css, js/*.js'"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.69.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-webp": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-purgecss": "^5.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-size": "^4.0.1",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-notify": "^4.0.0",
+    "browser-sync": "^2.29.1"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "not dead"
+  ],
+  "author": "CA-3 Student Project",
+  "license": "MIT"
+}

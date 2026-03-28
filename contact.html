@@ -1,28 +1,216 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Pacifico&family=Oswald&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - TechVista</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/layout.css">
-
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <nav class="navbar">
+        <div class="nav-logo"><span class="logo-icon">◈</span><span class="logo-text">TechVista</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <button class="nav-cta">Get Started</button>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+    </nav>
 
-<h1>Contact Us</h1>
+    <section class="page-hero contact-hero">
+        <div class="page-hero-content">
+            <h1>Let's Work Together</h1>
+            <p>Tell us about your project and we'll get back to you within 24 hours</p>
+        </div>
+    </section>
 
-<img src="images/img (9).jpg">
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrap">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service...</option>
+                                <option value="web">Web Development</option>
+                                <option value="mobile">Mobile App Development</option>
+                                <option value="design">UI/UX Design</option>
+                                <option value="cloud">Cloud & DevOps</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Project Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range...</option>
+                                <option value="5k">$5,000 - $15,000</option>
+                                <option value="15k">$15,000 - $50,000</option>
+                                <option value="50k">$50,000 - $100,000</option>
+                                <option value="100k">$100,000+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Description *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project, goals, timeline, and any specific requirements..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">Send Message →</button>
+                        <p class="form-note">* We'll respond within 24 hours. Your information is kept private.</p>
+                    </form>
+                </div>
 
-<form>
-    <input type="text" placeholder="Your Name"><br><br>
-    <input type="email" placeholder="Email"><br><br>
-    <textarea placeholder="Message"></textarea><br><br>
-    <button type="submit">Send</button>
-</form>
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>We're here to answer any questions you have. Reach us through any of the following channels:</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-details">
+                                <h4>Email Us</h4>
+                                <a href="mailto:hello@techvista.com">hello@techvista.com</a>
+                                <p>General inquiries & project discussions</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-details">
+                                <h4>Call Us</h4>
+                                <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                                <p>Mon–Fri, 9AM–6PM PST</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div class="method-details">
+                                <h4>Visit Us</h4>
+                                <p>100 Tech Street, Suite 400<br>San Francisco, CA 94105</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">💬</div>
+                            <div class="method-details">
+                                <h4>Live Chat</h4>
+                                <p>Available on our website<br>Mon–Fri, 8AM–8PM PST</p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="office-hours">
+                        <h3>Office Hours</h3>
+                        <div class="hours-grid">
+                            <span>Monday – Friday</span><span>9:00 AM – 6:00 PM PST</span>
+                            <span>Saturday</span><span>10:00 AM – 2:00 PM PST</span>
+                            <span>Sunday</span><span>Closed</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="socials">
+                            <a href="#" class="social-btn">LinkedIn</a>
+                            <a href="#" class="social-btn">Twitter</a>
+                            <a href="#" class="social-btn">GitHub</a>
+                            <a href="#" class="social-btn">Dribbble</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        How long does a typical project take?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Project timelines vary depending on scope and complexity. A simple website takes 4–6 weeks, while a complex web application can take 3–6 months. We provide detailed timelines during our discovery phase.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Do you offer ongoing support after launch?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer various support and maintenance packages ranging from basic bug fixes to full ongoing development partnerships. 98% of our clients continue working with us after their initial project.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        What is your payment structure?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We typically work with a 40% upfront deposit, 40% at project midpoint, and 20% upon delivery. For larger projects, we can arrange monthly payment schedules.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Do you work with international clients?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We work with clients across 40+ countries and are experienced in managing remote projects across different time zones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><span class="logo-icon">◈</span> TechVista<p>Transforming ideas into digital reality since 2009.</p></div>
+                <div class="footer-links"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-links"><h4>Services</h4><ul><li><a href="#">Web Development</a></li><li><a href="#">Mobile Apps</a></li><li><a href="#">UI/UX Design</a></li><li><a href="#">Cloud Solutions</a></li></ul></div>
+                <div class="footer-contact"><h4>Contact</h4><p>📧 hello@techvista.com</p><p>📞 +1 (555) 123-4567</p><p>📍 San Francisco, CA</p></div>
+            </div>
+            <div class="footer-bottom"><p>© 2024 TechVista. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

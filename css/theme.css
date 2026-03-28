@@ -1,0 +1,86 @@
+/* theme.css - CSS Custom Properties / Variables */
+
+:root {
+    /* Colors */
+    --color-primary: #667eea;
+    --color-primary-dark: #764ba2;
+    --color-secondary: #f093fb;
+    --color-dark: #1a1a2e;
+    --color-dark-2: #16213e;
+    --color-dark-3: #0f3460;
+    --color-text: #4a4a6a;
+    --color-light: #f8f9ff;
+    --color-white: #ffffff;
+    --color-border: #e8e8f0;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-dark: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    --gradient-light: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
+    --shadow-lg: 0 20px 50px rgba(0,0,0,0.12);
+    --shadow-primary: 0 4px 15px rgba(102, 126, 234, 0.3);
+    
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 30px;
+    --radius-full: 50px;
+    
+    /* Transitions */
+    --transition-fast: 0.15s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.6s ease;
+    
+    /* Spacing */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    
+    /* Font Sizes */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    
+    /* Z-index */
+    --z-dropdown: 100;
+    --z-sticky: 500;
+    --z-fixed: 1000;
+    --z-modal: 2000;
+    --z-tooltip: 3000;
+}
+
+/* Dark mode (not implemented but vars defined) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-dark: #e8e8ff;
+        --color-text: #c0c0e0;
+        --color-white: #1a1a2e;
+        --color-light: #16213e;
+        --color-border: rgba(255,255,255,0.1);
+    }
+}
+
+/* Utility classes using CSS vars */
+.bg-primary { background: var(--gradient-primary); }
+.bg-dark { background: var(--gradient-dark); }
+.text-primary { color: var(--color-primary); }
+.shadow-primary { box-shadow: var(--shadow-primary); }
+.rounded-full { border-radius: var(--radius-full); }
+.rounded-lg { border-radius: var(--radius-lg); }

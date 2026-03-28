@@ -1,40 +1,220 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Foodies - Home</title>
-
-    <!-- Multiple fonts (INTENTIONALLY HEAVY) -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Pacifico&family=Oswald&display=swap" rel="stylesheet">
-
-    <!-- Multiple CSS files -->
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVista - Innovation Redefined</title>
+    <!-- UNOPTIMIZED: Multiple render-blocking CSS files -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/layout.css">
-
-    <!-- JS in HEAD (NO defer - SLOW) -->
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <!-- UNOPTIMIZED: Google Fonts with all weights (not subsetted) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- UNOPTIMIZED: No preload hints -->
 </head>
-
 <body>
-
-<header>
-    <h1>Foodies Restaurant</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Contact</a>
-        <a href="cart.html">Cart</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span class="logo-icon">◈</span>
+            <span class="logo-text">TechVista</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-cta">Get Started</button>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
     </nav>
-</header>
 
-<h2>Welcome to Foodies 🍕</h2>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <!-- UNOPTIMIZED: Large uncompressed images, no lazy loading, no WebP -->
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&q=100" 
+                 alt="Hero Background" class="hero-bg-img" id="hero-img">
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">🚀 Next-Gen Technology</div>
+            <h1 class="hero-title">Innovation<br><span class="gradient-text">Redefined</span></h1>
+            <p class="hero-subtitle">We craft cutting-edge digital experiences that transform businesses and delight users worldwide.</p>
+            <div class="hero-ctas">
+                <a href="services.html" class="btn-primary">Explore Services</a>
+                <a href="portfolio.html" class="btn-secondary">View Our Work</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-num" data-target="250">0</span><span>+</span><p>Projects</p></div>
+                <div class="stat"><span class="stat-num" data-target="98">0</span><span>%</span><p>Satisfaction</p></div>
+                <div class="stat"><span class="stat-num" data-target="15">0</span><span>+</span><p>Years</p></div>
+            </div>
+        </div>
+    </section>
 
-<!-- Large images (NO optimization) -->
-<img src="images/img (1).jpg">
-<img src="images/img (2).jpg">
-<img src="images/img (3).jpg">
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose TechVista?</h2>
+                <p>We combine creativity with technical excellence to deliver outstanding results.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Optimized performance that keeps your users engaged and your business ahead of the competition.</p>
+                    <!-- UNOPTIMIZED: Image not lazy loaded -->
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=100" alt="Speed" class="feature-img">
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure by Design</h3>
+                    <p>Enterprise-grade security built into every layer of your application from day one.</p>
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&q=100" alt="Security" class="feature-img">
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Fully Responsive</h3>
+                    <p>Pixel-perfect experiences across all devices, from mobile phones to large displays.</p>
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&q=100" alt="Responsive" class="feature-img">
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Beautiful Design</h3>
+                    <p>Stunning visual interfaces crafted by award-winning designers with an eye for detail.</p>
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&q=100" alt="Design" class="feature-img">
+                </div>
+            </div>
+        </div>
+    </section>
 
-<p>Best food in town with amazing taste and quality.</p>
+    <!-- Showcase Section -->
+    <section class="showcase">
+        <div class="container">
+            <h2>Our Latest Work</h2>
+            <div class="showcase-grid">
+                <div class="showcase-item large">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=100" alt="Project 1">
+                    <div class="showcase-overlay">
+                        <h3>E-Commerce Platform</h3>
+                        <p>React · Node.js · AWS</p>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&q=100" alt="Project 2">
+                    <div class="showcase-overlay">
+                        <h3>Mobile Banking App</h3>
+                        <p>Flutter · Firebase</p>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=100" alt="Project 3">
+                    <div class="showcase-overlay">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Vue.js · D3.js</p>
+                    </div>
+                </div>
+            </div>
+            <a href="portfolio.html" class="btn-outline">View All Projects →</a>
+        </div>
+    </section>
 
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=100" alt="Client 1" class="client-avatar">
+                    <p>"TechVista transformed our digital presence completely. Our sales increased by 300% within 6 months!"</p>
+                    <div class="client-info">
+                        <strong>Sarah Johnson</strong>
+                        <span>CEO, RetailMax</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=100" alt="Client 2" class="client-avatar">
+                    <p>"Exceptional team with outstanding technical expertise. Delivered beyond expectations every time."</p>
+                    <div class="client-info">
+                        <strong>Michael Chen</strong>
+                        <span>CTO, FinanceHub</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=100" alt="Client 3" class="client-avatar">
+                    <p>"Working with TechVista was a game-changer. Professional, creative, and always on time."</p>
+                    <div class="client-info">
+                        <strong>Emily Rodriguez</strong>
+                        <span>Founder, HealthTech</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Let's build something amazing together. Get a free consultation today.</p>
+            <a href="contact.html" class="btn-primary btn-large">Get Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-icon">◈</span> TechVista
+                    <p>Transforming ideas into digital reality since 2009.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Cloud Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>📧 hello@techvista.com</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                    <p>📍 San Francisco, CA</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 TechVista. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- UNOPTIMIZED: Multiple synchronous JS files at bottom (should use defer) -->
+    <script src="js/utils.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
